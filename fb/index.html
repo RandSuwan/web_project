@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name ="viewport " content="width=device-width,initial-scale=1.0">
+    <TITLE>My Furniture </TITLE>
+    <link rel="stylesheet"  href="sw.css">
+    <script type="text/javascript" src=""></script>
+
+
+</head>
+<body >
+
+<div class="navbar">
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="try.php"><i class="fa fa-fw fa-search"></i> Shop</a>
+    <a href="ordeer.php"><i class="fa fa-fw fa-envelope"></i> Order</a>
+    <a href="login.php"><i class="fa fa-fw fa-login"></i> login </a>
+</div>
+
+
+<div class="hero" >
+  <div>
+      <br><br>
+      <br><br>
+  </div>
+    <div class="row">
+        <div class="col-1">
+           <h1> MY HOME</h1>
+            <p>
+           Make Your Comfort Is Our Happiness
+            </p>
+
+            <ul>
+                <li class="btn active" >
+
+                </li>
+                <li class="btn">
+
+            </li>
+                <li class="btn">
+
+            </li>
+            </ul>
+        </div>
+        <div class="col-2">
+<img src="imagee/sec1.jpg" id="b1">
+        </div>
+
+    </div>
+</div>
+<script>
+    var btn=document.getElementsByClassName("btn");
+    var b1=document.getElementById("b1");
+    btn[0].onclick=function (){
+        b1.src="imagee/sec1.jpg";
+      animation();
+        this.classList.add("active");
+    }
+    btn[1].onclick=function (){
+        b1.src="imagee/sec2.jpg";
+        animation();
+        this.classList.add("active");
+    }
+    btn[2].onclick=function (){
+        b1.src="imagee/kk.jpg";
+        animation();
+        this.classList.add("active");
+    }
+function  animation(){
+    b1.classList.add("zoom");
+    setTimeout(function (){
+            b1.classList.remove("zoom");
+        }
+        ,500);
+    for(b of btn){
+      b.classList.remove("active");
+    }
+}
+
+</script>
+<p style="border-radius: 2rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54004.07704904628!2d35.28269880381284!3d32.22430472230713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ce0f650425697%3A0x7f0ba930bd153d84!2z2YbYp9io2YTYsw!5e0!3m2!1sar!2s!4v1638858078422!5m2!1sar!2s" width="1490" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+<footer>
+
+
+    <p>      contact us    <br>
+        E-MAIL:<br>
+        <a href="mailto:hege@gmail.com">masa.sayegh1@gmail.com<br>rand.nabil.2019@gmail.com </a><br>Wahtsapp
+        <br>+9720598231238<br>+970594330474
+        <br><div style="color: #333333">visit us: @Nablus</div></p>
+</footer>
+</body>
+</html>
